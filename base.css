@@ -1,0 +1,605 @@
+/* if adding additional elements, put at the very bottom with comments for easier troubleshooting -mark <3
+
+	don't write elements without reference into the .html files.
+	
+	each .html file is separated by comments. be sure to group all the codes together.
+	
+	HEX CODES:
+	#F80229 - red
+	#F8E8F7 - light pink
+	#808080 - gray
+	#E85C00 - brown
+	#ADD8E6 - light blue
+	#A52A2A - another brown
+	#FD8FA6 - dark pink
+	#191970 - brown
+	#131357 - darker blue
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Barrio);
+
+/* GLOBAL ATTRIBUTES*/
+html, body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #F8E8F7;
+	font-size: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+}
+
+a:link {
+	text-decoration: none;
+    color: #424242;
+}
+
+a:visited {
+   color: #424242;
+}
+
+a:active {
+   color: #424242;
+}
+ 
+.active{
+	background-color: #F8E8F7;
+	border-radius: 10px;
+}
+
+#main{
+	width: 100%;
+	padding-top: 60px;
+	margin: auto;
+}
+
+/*NAVIGATION BAR*/
+/* start - navigation bar */
+.banner{
+	background-color: #FD8FA6;
+	height: 50px;
+	position: fixed;
+	width:100%;
+	top: 0;
+	float: top;	
+}
+
+#logo h2 {
+	font-family: Barrio;
+	color: #F80229;
+	font-weight:bold;
+	position:absolute;
+	margin-top:0;
+	padding-left:10px;
+}
+	
+.navigation ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.navigation li {
+	display: inline;
+	border-right: 2px #000000 solid;
+	border-left: 2px #000000 solid;
+}
+
+.navigation a {
+    color: #131357;
+    text-align: center;
+    padding: 2px 30px;
+	font-size: 16px;
+}
+
+.navigation li:hover {
+	border-radius: 10px;
+}
+/* end - navigation bar */
+
+/*FOOTER*/
+/* start - footer */
+.mainfooter{
+	background-color: #FD8FA6;
+	width:100%;
+	height: 5%;
+	position: fixed;
+	bottom: 0;
+	float: bottom;
+}
+.footer{
+	font-size: 11px;
+	color: #000000;
+	width: 80%;
+	margin:auto;
+}
+
+.footerinner ul{
+	color: #000000;
+	list-style-type: none;
+	text-align: center;
+}
+.footerinner li{
+	display: inline;
+	padding: 2px 30px;
+	border-right: 2px solid #000000;
+	border-left: 2px solid #000000; 
+}
+
+.footerinner a{
+	color: #131357;
+	text-align: center;
+	text-decoration: none;
+}
+
+#logo_footer {
+	font-family: Barrio;
+	color:#F80229;
+}
+
+.copy{
+	font-size: 10px;
+}
+
+.footer li:hover {
+	border-radius: 10px;
+}
+/* end - footer */
+
+/* HOMEPAGE */
+/*start - main body */
+
+.about {
+	padding: 100px 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.recipes{
+	padding: 100px 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.contact {
+	padding: 100px 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+/* about us banner */
+.aboutus {
+	padding: 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	background-image: url(images/banner1.jpg);
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:100%;
+	height:187px;	
+}
+
+/* recipes banner */
+.recipes{
+	padding: 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	background-image: url(images/banner2.jpg);
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:100%;
+	height:188px;
+}
+
+/* contact us banner */
+.contactus {
+	padding: 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	background-image: url(images/banner_3.jpg);
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:100%;
+	height: 187px;
+}
+
+/*text inside the banners*/
+.content {
+	text-align: center;
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+
+/* about us banner hover effect */
+.aboutus:hover {
+	background-image: url(images/banner_2.jpg);
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-ms-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+/* recipes banner hover effect */
+.recipes:hover {
+	background-image: url(images/banner_1.jpg);
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-ms-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+/* contact us us banner hover effect */
+.contactus:hover {
+	background-image: url(images/banner3.jpg);
+	background-color: #000000;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-ms-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+}
+
+/* hides image in banner */
+.hover-content {
+    display:none;
+}
+
+/* display new text when hovering image */
+.content:hover .hover-content {
+	display: block;
+	color: #ADD8E6 ;
+}
+/* end - homepage */
+
+
+/* CONTACT US PAGE */
+/* start - Contact Us Page*/
+.mainbox {
+	display: block;
+	background-color: #F8E8F7;
+	width:80%;
+	height: 90%;
+	margin: auto;
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+
+.box1 {
+	text-align: center;
+}
+
+.box2{
+	background-color:#F8E8F7;
+	width: 97%;
+	height: 80%;
+	margin: auto;
+	border: 5px;
+	border-style: none;
+	border-radius: 10px;
+}
+
+.form{
+	height: 90%;
+	width: 100%;
+	margin: auto;
+}
+
+/* name, email, subject box*/
+input[type="email"], input[type="text"]{
+	display: inline-block;
+	width: 95%;
+	background-color: white;
+	border: none;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px; 
+	font-size: 1em;
+	font-family: inherit;
+}
+
+/* message box */
+textarea{
+	display: inline-block;
+	width: 95%;
+	background-color: white;
+	border: none;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	font-size: 1em;
+	resize: none;
+}
+
+/* submit button */
+input[type="submit"]{
+	background: none;
+	color: brown;
+	border: 2px solid brown;
+	border-radius: 10px; 
+	border-style: groove;
+	font-size: 0.8em;
+	padding: 10px;
+	margin-left: 30%;
+	width: 40%;
+	cursor: default;
+	text-align: center;
+}
+/* end - Contact Us Page */
+
+/* THANKS PAGE */
+/* start - Thanks Page*/
+.mainThanks{
+	display: block;
+	background-color:lightgray;
+	width:80%;
+	height: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 7px;
+	border-style: groove;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.thanks{
+	margin: 7%;
+}
+
+/* end - Thanks Page */
+
+/*ABOUT US PAGE*/
+/* start - About Us Page*/
+.mainAbout{
+	display: block;
+	background-color: #FFFFFF;
+	width:80%;
+	height: 90%;
+	margin: auto;
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.about{
+	border: none;
+}
+/* end - About Us Page */
+
+
+/* RECIPES PAGE */
+/* start - recipes page */
+.recipemain {
+    margin: auto;
+    width: 57%;
+
+}
+
+.recipehead h2 {
+	margin: auto;
+	width: 80%;
+	text-align: center;
+	
+}
+
+.pudding {
+	background-image: url(images/pudding.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 250px;
+	height: 250px;
+	border: 3px solid #ADD8E6;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.brownies {
+	background-image: url(images/brownies.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 250px;
+	height: 250px;
+	border: 3px solid #ADD8E6;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.muffin {
+	background-image: url(images/muffin.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 250px;
+	height: 250px;
+	border: 3px solid #ADD8E6;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.cheesecake {
+	background-image: url(images/cheesecake.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 250px;
+	height: 250px;
+	border: 3px solid #ADD8E6;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.cookies {
+	background-image: url(images/cookies.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 250px;
+	height: 250px;
+	border: 3px solid #ADD8E6;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.addmore {
+	background-image: url(images/addmore.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 250px;
+	height: 250px;
+	border: 3px solid #ADD8E6;
+	border-radius: 10px;
+	margin: 0;
+}
+/* end - recipe page */
+
+/* SITEMAP PAGE*/
+/*Sitemap title*/
+.title {
+	margin-top:70px;
+	text-align:center;
+}
+
+/*Sitemap links*/
+.map {
+	margin-top:50px;
+	margin-left:500px;
+}
+
+/*Sitemap image*/
+.image {
+	float:left;
+}
+
+/*Sitemap recipes lists*/
+.lists {
+	float:right;
+	top:0;
+	width:65%;
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+/* end - Sitemap page */
+
+/* PUDDING PAGE */
+/* start - pudding page*/
+#mainpudding {
+	margin:auto;
+	width:80%;
+}
+
+.puddingmain {
+	margin:auto;
+	width:80%;
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	margin-bottom:2%;
+	background-color:#FFFFFF;
+}
+
+.puddingmain h2 {
+	text-align:center;
+}
+
+/* Pudding image */
+.puddingimage {
+	float:left;
+	padding-left:10%;
+}
+
+.puddingimage img {
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+}
+
+/* Ingredient Table: Pudding */
+.puddingtable {
+	float:right;
+	padding-right:10%;
+	width:40%
+}
+
+.puddingtable table {
+	background-color:#FFFFFF;
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	border-collapse:collapse;
+	width:100%;
+}
+
+.puddingtable th {
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	background-color: #ADD8E6;
+}
+
+.puddingtable td {
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	padding-left:2%;
+}
+
+/* Pudding - the body of the text */
+.puddingbody {
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	display:inline-block;
+	width:80%;
+	margin-left:10%;
+	margin-top:2%;
+	margin-bottom:5%;
+	background-color: #FFFFFF;
+}
+
+.puddingbody h2 {
+	text-align:center;
+	width:25%;
+	margin:auto;
+	margin-top:2%;
+	background-color: #F8E8F7;
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+}
+
+/* Directions to make pudding */
+.puddingdirections {
+	margin:auto;
+	background-color:#FFFFFF;
+	width:95%;
+}
+
+.puddingdirections ol {
+	padding-top:1%;
+	padding-bottom:1%;
+	border-radius: 10px;
+}
+/* end - pudding page */
