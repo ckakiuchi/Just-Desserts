@@ -2,7 +2,7 @@
 
 	<!-- main content -->
 	<section>
-	<div class="mainsitemap">
+	<div class="main">
 			<div class="title">
 				<h2>SITEMAP</h2>
 			</div>

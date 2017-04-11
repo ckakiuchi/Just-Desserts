@@ -107,8 +107,9 @@ a:active {
 /*FOOTER*/
 /* start - footer */
 #mainfooter {
+	height: 31px;
 	display: block;
-	bottom:0;
+	/*bottom:0;*/
 	margin:auto;
 }
 
@@ -131,7 +132,7 @@ a:active {
 /*start - main body */
 
 /* about us banner */
-
+/*
 .aboutus {
 	padding: 0;
 	border: none;
@@ -147,7 +148,7 @@ a:active {
 }
 
 /* recipes banner */
-.recipes{
+/*.recipes{
 	padding: 0;
 	border: none;
 	border-radius: 280px;
@@ -162,7 +163,7 @@ a:active {
 }
 
 /* contact us banner */
-.contactus {
+/*.contactus {
 	padding: 0;
 	border: none;
 	border-radius: 280px;
@@ -177,7 +178,7 @@ a:active {
 }
 
 /*text inside the banners*/
-.content_right {
+/*.content_right {
 	text-align: center;
 	display: block;
 	height: 100%;
@@ -255,6 +256,13 @@ a:active {
 /* -------------------------------------------------------------------------------------*/
 /* CONTACT US PAGE */
 /* start - Contact Us Page*/
+
+#main{
+	min-height: 100%;
+	margin: 0 auto -31px;
+	overflow: auto;
+}
+
 .mainbox {
 	display: block;
 	width:80%;
@@ -355,11 +363,10 @@ input[type="submit"]{
 }*/
 .mainAbout{
 	width:80%;
-	height: 100%;
 	margin: auto;
-	margin-bottom: 23%;
 	text-align: center;
 	border: none;
+
 }
 
 /* end - About Us Page */

@@ -1,7 +1,6 @@
 <?php include_once('statics/header.php'); ?>
 
 <!--Register-->
-	<section>
 	<div id="main">
 		<div class="mainbox_register">
 			<div class="registerhead"><h2>Register Now</h2></div>
@@ -28,6 +27,5 @@
 			</div>
 		</div>
 	</div>
-	</section>
 
 <?php include_once('statics/footer.php'); ?>

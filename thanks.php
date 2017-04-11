@@ -1,7 +1,6 @@
 <?php include_once('statics/header.php'); ?>
 
 	<!-- main content -->
-	<section>
 	<div id="main">
 	<div class="mainThanks">
 		<div class="thanks">
@@ -12,6 +11,5 @@
 		</div>
 	</div>
 	</div>
-	</section>
 
 <?php include_once('statics/footer.php'); ?>
