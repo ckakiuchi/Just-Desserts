@@ -1,5 +1,4 @@
 	<!-- main content -->
-	<section>
 	<!-- Main Pudding content -->
 		<div id="main">
 			<div id="mainpudding">
@@ -9,7 +8,7 @@
 
 				<!-- Image of Pudding -->
 				<div class="puddingimage">
-					<img src="../images/pudding.jpg" alt = "pudding">
+					<img src="./images/pudding.jpg" alt = "pudding">
 				</div>
 
 				<!-- Table of Ingredients -->
@@ -97,4 +96,3 @@
 		  </form>
 		</div>
 		<!-- End of Comment section-->
-	</section>
