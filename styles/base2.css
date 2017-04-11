@@ -107,8 +107,9 @@ a:active {
 /*FOOTER*/
 /* start - footer */
 #mainfooter {
+	height: 31px;
 	display: block;
-	bottom:0;
+	/*bottom:0;*/
 	margin:auto;
 }
 
@@ -130,131 +131,17 @@ a:active {
 /* HOMEPAGE */
 /*start - main body */
 
-/* about us banner */
-
-.aboutus {
-	padding: 0;
-	border: none;
-	border-radius: 280px;
-	background-image: url(images/banner1.jpg);
-	background-color: #000000;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width:30%;
-	height:250px;
-	margin-left: 5%;
-}
-
-/* recipes banner */
-.recipes{
-	padding: 0;
-	border: none;
-	border-radius: 280px;
-	background-image: url(images/banner2.jpg);
-	background-color: #000000;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width:30%;
-	height:250px;
-	margin-left: 65%;
-}
-
-/* contact us banner */
-.contactus {
-	padding: 0;
-	border: none;
-	border-radius: 280px;
-	background-image: url(images/banner_3.jpg);
-	background-color: #000000;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width:30%;
-	height:250px;
-	margin-left: 5%;
-}
-
-/*text inside the banners*/
-.content_right {
-	text-align: center;
-	display: block;
-	height: 100%;
-	width: 100%;
-	text-decoration: none;
-	width: 50%;
-	float: right;
-	margin-right: 10%;
-}
-
-.content_left {
-	text-align: center;
-	display: block;
-	height: 100%;
-	width: 100%;
-	text-decoration: none;
-	width: 50%;
-	float: left;
-	margin-left: 10%;
-}
-
-/* about us banner hover effect */
-.aboutus:hover {
-	background-image: url(images/banner_2.jpg);
-	background-color: #000000;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-transition: all 1s ease-in;
-	-moz-transition: all 1s ease-in;
-	-ms-transition: all 1s ease-in;
-	-o-transition: all 1s ease-in;
-	transition: all 1s ease-in;
-}
-
-/* recipes banner hover effect */
-.recipes:hover {
-	background-image: url(images/banner_1.jpg);
-	background-color: #000000;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-transition: all 1s ease-in;
-	-moz-transition: all 1s ease-in;
-	-ms-transition: all 1s ease-in;
-	-o-transition: all 1s ease-in;
-	transition: all 1s ease-in;
-}
-
-/* contact us us banner hover effect */
-.contactus:hover {
-	background-image: url(images/banner3.jpg);
-	background-color: #000000;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	-webkit-transition: all 1s ease-in;
-	-moz-transition: all 1s ease-in;
-	-ms-transition: all 1s ease-in;
-	-o-transition: all 1s ease-in;
-	transition: all 1s ease-in;
-}
-
-/* hides image in banner */
-.hover-content {
-    display:none;
-}
-
-/* display new text when hovering image */
-.content:hover .hover-content {
-	display: block;
-	color: #494949 ;
-}
 
 /* -------------------------------------------------------------------------------------*/
 /* CONTACT US PAGE */
 /* start - Contact Us Page*/
+
+#main{
+	min-height: 100%;
+	margin: 0 auto -31px;
+	overflow: auto;
+}
+
 .mainbox {
 	display: block;
 	width:80%;
@@ -355,11 +242,10 @@ input[type="submit"]{
 }*/
 .mainAbout{
 	width:80%;
-	height: 100%;
 	margin: auto;
-	margin-bottom: 23%;
 	text-align: center;
 	border: none;
+
 }
 
 /* end - About Us Page */
