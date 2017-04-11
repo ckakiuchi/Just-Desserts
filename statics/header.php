@@ -1,3 +1,15 @@
+<?php
+	include 'forum/functions.php';
+	require_once('forum/config.php');
+	session_start();
+
+	// Connect to server and select database.
+	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect, error: ".((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
+	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB, error: ".((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
+	$tbl_name="topic"; // Table name
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +33,21 @@
 					</div>
 				</div>
 				<div class="login_box">
-					<form id="login_form" action="#" method="post">
+
+					<?php
+						// 1a
+						// Show the current user’s name on the page when he/she is logged in.
+						if (isLoggedIn()) {
+							$userIdLogged = $_SESSION['SESS_MEMBER_ID'];
+							$sql="SELECT * FROM members WHERE member_id='$userIdLogged'";
+							$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+							$value = mysqli_fetch_array($result);
+							echo "<h3>Hello ". $value['firstname'] ." ". $value['lastname'] ."!</h3><br><a href='forum/forum.php'>Go to forum  </a>   |   <a href='forum/logout.php'>  Logout</a>";
+						} else {
+						// end 1a
+					 ?>
+
+					<form id="login_form" action="forum/login.php" method="post">
 						<input type="hidden" name="userData">
 						<table cellspacing="0">
 								<tr>
@@ -34,13 +60,13 @@
 								</tr>
 								<tr>
 									<td>
-										<input class="form-control" type="text" name="loginname" id="loginname">
+										<input class="form-control" type="text" name="login" id="loginname">
 									</td>
 									<td>
-										<input class="form-control" type="password" name="loginpass" id="loginpass">
+										<input class="form-control" type="password" name="password" id="loginpass">
 									</td>
 									<td>
-										<input type="submit" class="btn btn-default" name="Login" value="Login" id="submitbutton" onclick="return validateUser()">
+										<input type="submit" class="btn btn-default" name="Login" value="Login" id="submitbutton">
 									</td>
 								</tr>
 								<tr id="tr_register">
@@ -50,6 +76,7 @@
 								</tr>
 						</table>
 					</form>
+					<?php } ?>
 				</div>
 
 				<!-- navigation -->

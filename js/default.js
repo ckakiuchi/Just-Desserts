@@ -63,6 +63,35 @@ function validateContactForm() {
 
 /*=========================================================*/
 /* validate registration form */
+
+function validateFirstName() {
+	var fname = $('fname').value;
+	if(fname.length == 0) {
+		producePrompt('Please input your first name', 'firstName_error' , 'red')
+		return false;
+	}
+	if (!fname.match(/^[A-Za-z]*[A-Za-z]$/)) {
+		producePrompt('First name is required.','firstName_error', '');
+		return false;
+	}
+	producePrompt('','firstName_error', '');
+	return true;
+}
+
+function validateLastName() {
+	var lname = $('lname').value;
+	if(lname.length == 0) {
+		producePrompt('Please input your last name', 'lastName_error' , 'red')
+		return false;
+	}
+	if (!lname.match(/^[A-Za-z]*[A-Za-z]$/)) {
+		producePrompt('Last name is required.','lastName_error', '');
+		return false;
+	}
+	producePrompt('','lastName_error', '');
+	return true;
+}
+
 function validUserName() {
 	var uname= $('username').value;
 	if(uname.length == 0) {
@@ -106,38 +135,38 @@ function validConfirmPassword() {
 	return true;
 }
 
-function validCustEmail() {
-	var cemail = $('CustEmail').value;
-	if (cemail.length == 0) {
-		producePrompt('Please input an Email.','cemail_error', 'red');
-		return false;
-	}
-	if (!cemail.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-		producePrompt('Please input a valid Email Address.','cemail_error', 'red');
-		return false;
-	}
-	producePrompt('','cemail_error', '');
-	return true;
-}
-
-function validConfCustEmail() {
-	var cemail = $('CustEmail').value;
-	var confcemail = $('confCustEmail').value;
-	if (confcemail.length == 0) {
-		producePrompt('Please reinput your Email.','confcemail_error', 'red');
-		return false;
-	}
-	if (confcemail != cemail) {
-		producePrompt('Please reinput your Email.','confcemail_error', 'red');
-		return false;
-	}
-	producePrompt('','confcemail_error', '');
-	return true;
-}
+// function validCustEmail() {
+// 	var cemail = $('CustEmail').value;
+// 	if (cemail.length == 0) {
+// 		producePrompt('Please input an Email.','cemail_error', 'red');
+// 		return false;
+// 	}
+// 	if (!cemail.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+// 		producePrompt('Please input a valid Email Address.','cemail_error', 'red');
+// 		return false;
+// 	}
+// 	producePrompt('','cemail_error', '');
+// 	return true;
+// }
+//
+// function validConfCustEmail() {
+// 	var cemail = $('CustEmail').value;
+// 	var confcemail = $('confCustEmail').value;
+// 	if (confcemail.length == 0) {
+// 		producePrompt('Please reinput your Email.','confcemail_error', 'red');
+// 		return false;
+// 	}
+// 	if (confcemail != cemail) {
+// 		producePrompt('Please reinput your Email.','confcemail_error', 'red');
+// 		return false;
+// 	}
+// 	producePrompt('','confcemail_error', '');
+// 	return true;
+// }
 
 /* validate contact us form upon pressing submit button*/
 function validateRegisterForm() {
-	if (!validUserName() || !validPassword() || !validConfirmPassword() || !validCustEmail() || !validConfCustEmail()) {
+	if (!validUserName() || !validPassword() || !validConfirmPassword() || !validateLastName() || !validateFirstName()) {
 		alert('Please correct errors to submit.');
 		return false;
 	}
