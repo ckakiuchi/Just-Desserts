@@ -2,31 +2,69 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="../base.css">
+	<link rel="stylesheet" href="../base2.css">
+	<script  src="../default.js" type="text/javascript"></script>
 	<title>Pudding</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 
 <body>
-	<!-- navigation bar / header (just copy paste whole header)-->
+<!-- navigation bar / header -->
 	<header>
-	<div class = "banner">
-		<div class="navigation">
-			<div class="logo">
-				<div id="logo">
-					<h2>JustDesserts&copy;</h2>
+		<div class = "banner">
+			<div class="navigation">
+				<div class="logo">
+					<div class="logo_img">
+						<a href="../index.html">
+						<img src="../images/logo2.png">
+						</a>
+					</div>
 				</div>
+				<div class="login_box">
+					<form id="login_form" action="#" method="post">
+						<input type="hidden" name="userData">
+						<table cellspacing="0">
+								<tr>
+									<td class="login_header">
+										<label for="email">Username / Email</label>
+									</td>
+									<td class="login_header">
+										<label for="pass">Password</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="form-control" type="text" name="loginname" id="loginname">
+									</td>
+									<td>
+										<input class="form-control" type="password" name="loginpass" id="loginpass">
+									</td>
+									<td>
+										<input type="submit" class="btn btn-default" name="Login" value="Login" id="submitbutton" onclick="return validateUser()">
+									</td>
+								</tr>
+								<tr id="tr_register">
+									<td colspan="2" id="linktoregister">
+										<a href="./register.html">Register here</a>
+									</td>
+								</tr>
+						</table>			
+					</form>
+				</div>
+				
+				<!-- navigation -->
 				<div class = "navigationbar">
-					<ul>
-						<li><a href = "../index.html">HOME</a></li>
-						<li><a href = "../about.html">ABOUT</a></li>
-						<li><a href = "../recipes.html">RECIPES</a></li>
-						<li><a href = "../contact.html">CONTACT</a></li>
-					</ul>
-				</div>
+					<div class="navbar">
+						<a href="../index.html" class="buttom" target="_self">Home</a>
+						<a href="../about.html" class="buttom" target="_self">About Us</a>
+						<a href="../recipes.html" class="buttom" target="_self">Our Services</a>
+						<a href="../contact.html" class="buttom" target="_self">Contact Us</a>
+					</div>		
+				</div><!-- end navigation -->
 			</div>
 		</div>
-	</div>
-	</header>
+	</header><br>
 
 	<!-- main content -->
 	<section>
@@ -99,23 +137,47 @@
 			</div>
 		</div>
 	</div>
+		<!-- Start of Comment section-->
+		<div class="commentbox">
+		  <form id="commentForm">
+			  <div class="comments">
+				<div class="comment_title">
+				  <h2>Comments</h2>
+				</div><br>
+				<label for="sortBy" class="sortBy">Sort by: </label>
+				  <select onblur="warnSortInvalid('sortBy')" id="sortBy" name="sortBy">
+					<option value="" selected disabled>Sort by...</option>
+					<option value="newest">By newest date</option>
+					<option value="oldest">By oldest date</option>
+					<option value="aToZ">By username (A-Z)</option>
+				   <option value="zToA">By username (Z-A)</option>
+				  </select><br><hr>
+				  <div id="posts"></div>
+				  
+				  <br><hr>
+				<!-- Textarea for comments-->
+				<label class="taComments" for="taComments">Type your comment here!</label>
+				  <textarea name="post" id="taComments"></textarea><br><br>
+					  
+				<!-- Submit Button -->
+				<input type="submit" value="Submit" onclick='postComment()'><br><br>
+			  </div>
+		  </form>
+		</div>
+		<!-- End of Comment section-->
 	</section>
 	
-	<!-- footer (just copy paste whole footer)-->
+<!-- footer -->
 	<footer>
-	<div class = "mainfooter">
-	    <div class="footer">
-			<div class="footerinner">
-				<ul>
-					<li id="logo_footer">JUSTDESSERTS<span class="copy">&copy;</span></li>
-					<li><a href="../sitemap.html">SITEMAP</a></li>
-					<li><a href="mailto:name@email.com">EMAIL</a></li>
-					<li><a href="#">TELEPHONE</a></li>
-				</ul>
-			</div>
-	    </div>	  
-	</div>
+		<div class = "mainfooter">
+			<div class="footer">
+				<a href="./sitemap.html" class="buttom">SITEMAP</a>
+				<a href="mailto:name@email.com" class="buttom">EMAIL</a>
+				<a href="#" class="buttom">TELEPHONE</a>
+			</div>	  
+		</div>
 	</footer>
+
 </body>
 
 </html>
