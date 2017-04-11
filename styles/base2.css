@@ -382,12 +382,11 @@ input[type="submit"]{
 }
 
 .recipe_box{
-	width: 100%;
+	width: 80%;
 	height: 80%;
 }
 
-.pudding {
-	background-image: url(images/pudding.jpg);
+.recipesImg{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -397,8 +396,18 @@ input[type="submit"]{
 	margin: 10px 10px 10px 130px;
 }
 
+.pudding {
+	background-image: url(../images/pudding.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 250px;
+	height: 250px;
+}
+
 .brownies {
-	background-image: url(images/brownies.jpg);
+	background-image: url(../images/brownies.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -409,7 +418,7 @@ input[type="submit"]{
 }
 
 .muffin {
-	background-image: url(images/muffin.jpg);
+	background-image: url(../images/muffin.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -420,7 +429,7 @@ input[type="submit"]{
 }
 
 .cheesecake {
-	background-image: url(images/cheesecake.jpg);
+	background-image: url(../images/cheesecake.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -431,7 +440,7 @@ input[type="submit"]{
 }
 
 .cookies {
-	background-image: url(images/cookies.jpg);
+	background-image: url(../images/cookies.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -442,7 +451,7 @@ input[type="submit"]{
 }
 
 .addmore {
-	background-image: url(images/addmore.png);
+	background-image: url(../images/addmore.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
