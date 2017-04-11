@@ -1,5 +1,6 @@
+<?php include_once('statics/header.php'); ?>
 <?php
-	require_once('auth.php');
+	//require_once('auth.php');
 ?>
 
 <!DOCTYPE html>
@@ -39,5 +40,3 @@
 </table>
 </body>
 </html>
-
-

@@ -1,8 +1,9 @@
+<?php include_once('statics/header.php'); ?>
 <?php
 
-	include 'functions.php';
+	//include 'functions.php';
 	require_once('config.php');
-	session_start();
+	//session_start();
 
 	// Connect to server and select database.
 	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect");
