@@ -38,9 +38,9 @@ $tbl_name="topic"; // Table name
 							if (isLoggedIn()){
 								// shows username while user is currently loggedin
 								echo '&nbsp<br/>';
-								echo 'Currently logged-in as:<br/> <strong>'.$_SESSION['SESS_FIRST_NAME'].'</strong><br/>';
-								echo '<a href="logout.php"><button type="button" class="btn btn-default">Logout</button></a>&nbsp&nbsp&nbsp&nbsp';
-								echo '<a href="forum.php"><button type="button" class="btn btn-default">Forums</button></a><br/><br/>';
+								echo 'Currently logged-in as:<div id="unamelogin">'.$_SESSION['SESS_FIRST_NAME'].'</div>';
+								echo '<a href="logout.php"><input type="button" class="btn" value="Logout"></a>&nbsp&nbsp&nbsp&nbsp';
+								echo '<a href="forum.php"><input type="button" class="btn" value="Forums"></a><br/><br/>';
 							} else {
 								include_once('login_form.php');
 							}

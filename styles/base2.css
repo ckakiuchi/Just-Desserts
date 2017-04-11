@@ -193,7 +193,6 @@ input[type="email"], input[type="text"], input[type="password"]{
 /* message box */
 textarea{
 	display: inline-block;
-
 	padding: 10px;
 	margin: 10px;
 	border-radius: 10px;
@@ -213,6 +212,10 @@ input[type="submit"]{
 	width: 27%;
 	cursor: default;
 	text-align: center;*/
+}
+
+.btn {
+	background-color: #FFEFD5;
 }
 /* end - Contact Us Page */
 
@@ -591,4 +594,12 @@ input[type="submit"]{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+
+#unamelogin {
+	overflow: hidden;
+	padding: 10px;
+	font-weight: bolder;
+	font-size: 23px;
 }
