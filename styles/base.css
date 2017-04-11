@@ -479,6 +479,55 @@ input[type="submit"]{
 	border-radius: 10px;
 	margin: 0;
 }
+
+.comment_title {
+	text-align:center;
+	width:25%;
+	margin:auto;
+	margin-top:2%;
+	background-color: #F8E8F7;
+	border: 7px solid #ADD8E6;
+	border-radius: 10px;
+	border-radius: 10px;
+}
+
+.commentbox {
+	width: 80%;
+	margin: auto;
+}
+
+.comments {
+	border: 7px solid #ADD8E6 ;
+	border-radius: 10px;
+	display:inline-block;
+	width:80%;
+	margin-left:10%;
+	margin-top:2%;
+	margin-bottom:5%;
+	background-color: #FFFFFF;
+}
+
+.taComments {
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+#taComments {
+	border: 1px solid black;
+	width: 92.5%;
+	margin-left: 2.5%;
+}
+
+.sortBy {
+	margin-left: 2.5%;
+	background-color:#FFFFFF;
+}
+
+#sortBy {
+	margin: auto;
+	background-color:#FFFFFF;
+}
+
 /* end - recipe page */
 
 /* SITEMAP PAGE*/
@@ -576,7 +625,6 @@ input[type="submit"]{
 	width:80%;
 	margin-left:10%;
 	margin-top:2%;
-	margin-bottom:5%;
 	background-color: #FFFFFF;
 }
 
